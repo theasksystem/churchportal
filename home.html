@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Church Portal</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS ============================================ -->
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bicon.min.css">
+    <!-- Flat Icon CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
+    <!-- audio & video player CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/plyr.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
+    <!-- nice-select CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <!-- perfect scrollbar css -->
+    <link rel="stylesheet" href="assets/css/plugins/perfect-scrollbar.css">
+    <!-- light gallery css -->
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+        .navbar-brand{
+            position: relative;
+            left: 3%;
+        }
+        
+        .section-heading > h2 {
+            
+            font-weight: 400;
+            color: red;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .line-shape {
+            width: 80px;
+            height: 2px;
+            background-color: #fb397d;
+            margin-top: 15px;
+        }
+
+        .line-shape {
+            margin-left: calc(50% - 40px);
+        }
+
+        .single-special > h4 {
+            font-size: 22px;
+            color: #5b32b4;
+        }
+
+        .single-icon {
+            margin-bottom: 25px;
+        }
+
+        .single-special > h4 {
+            font-size: 22px;
+            color: #5b32b4;
+            margin-bottom: 15px;
+        }
+
+        .single-special {
+            border: 1px solid #eff2f6;
+            padding: 15px;
+            border-radius: 40px 40px 40px 40px;
+            -webkit-transition-duration: 800ms;
+            -o-transition-duration: 800ms;
+            transition-duration: 800ms;
+            margin-bottom: 30px;
+        }
+
+        .single-special:hover {
+            -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 90px rgba(0, 0, 0, 0.5);
+        }
+
+        .single-special p {
+            margin-bottom: 0;
+        }
+
+        .single-special img {
+            width: 100%;
+            height: 280px;
+            padding: 3%;
+        }
+
+        .row {
+            padding: 30px;
+        }
+
+        #container  {
+            width: 100%;
+        }
+
+        .image-special {
+            padding: 2%;
+            -webkit-transition-duration: 800ms;
+            -o-transition-duration: 800ms;
+            transition-duration: 800ms;
+            margin-bottom: 30px;
+        }
+
+        .image-special img  {
+            border-radius: 10px 10px 10px 10px;
+            transition: transform .2s;   
+        }
+
+        .zoom {
+            transition: transform .2s;
+        }
+        .zoom :hover   {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+        }
+
+        .contact-special > h6 {
+            padding: 15px;
+            color: grey;
+        }
+
+        body {
+            background-color: #F5F9FC;
+        }
+
+        footer, #videos, #pastors {
+            background-color: white;
+        }
+
+        .footer-text > h3 {
+            color: red;
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .footer-text {
+            margin-bottom: 15px;
+        }
+
+        .footer-menu ul li {
+            display: inline-block;
+        }
+
+        .footer-menu ul li a {
+            border-right: 2px solid #726a84;
+            display: block;
+            padding: 0 7.5px;
+            color: #726a84;
+        }
+
+        .footer-menu ul li:last-child a {
+            border-right: 0 solid #ddd;
+        }
+
+        .footer-menu {
+            margin-bottom: 15px;
+        }
+
+        .copyright-text > p {
+            margin-bottom: 0;
+        }
+
+        .footer-social-icon {
+            padding:10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+        $('a').on('click',function(event){
+        if(this.hash != "")
+        {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop:$(this.hash).offset().top
+            },800,function(){
+                window.location.hash = this.hash;
+            });
+        }
+    });
+});
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body style="padding-top: 3%;">
+    <header id="home">
+        <div class="container">
+            <!-- Menu Area Start -->
+            <div> 
+                <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                    <!-- Logo -->
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#ca-navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu Area -->
+                    <div class="collapse navbar-collapse" id="ca-navbar">
+                        <a class="navbar-brand"><img src="assets/images/logo/logo2.png" alt="church portal"></a>
+                        <ul class="navbar-nav ml-auto" id="nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div id="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="center-div">
+                        <img class="mx-auto d-block" src="assets/images/banner/jesus.jpg" alt="jesus banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</br></br></br>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <!-- Section Heading Area -->
+                    <div class="section-heading text-center">
+                        <img src="assets/images/banner/about-img.jpg" alt="about us banner">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <!-- Section Heading Area -->
+                    <div class="section-heading text-center">
+                        <h2>Jesus in Christianity</h2>
+                        <div class="line-shape"></div></br>
+                        <p class="text-justify">Also referred to as Jesus of Nazareth and Jesus Christ, was a first-century Jewish preacher and religious leader. He is the central figure of Christianity. Most Christians believe he is the incarnation of God the Son and the awaited Messiah (Christ) prophesied in the Old Testament.</p></br>
+                        <p class="text-justify">Christians believe that Jesus was both human and divine—the Son of God. While there has been theological debate over the nature of Jesus, Trinitarian Christians believe that Jesus is the Logos, God incarnate, God the Son, and "true God and true man"—both fully divine and fully human.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</br>
+<section id="pastors">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="section-heading text-center">
+                    <h2>Our Pastors</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Single Special Area -->
+            <div class="col-12 col-md-4">
+                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="single-icon">
+                        <i class="ti-mobile" aria-hidden="true"></i>
+                    </div>
+                    <img class="d-block w-100" src="assets/images/profile/profile1.jpg">
+                    <h4>Pastor 1</h4>
+                </div>
+            </div>
+            <!-- Single Special Area -->
+            <div class="col-12 col-md-4">
+                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="single-icon">
+                        <i class="ti-ruler-pencil" aria-hidden="true"></i>
+                    </div>
+                    <img class="d-block w-100" src="assets/images/profile/profile2.png">
+                    <h4>Pastor 2</h4>
+                </div>
+            </div>
+            <!-- Single Special Area -->
+            <div class="col-12 col-md-4">
+                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <img class="d-block w-100" src="assets/images/profile/profile3.jpg">
+                    <h4>Pastor 3</h4>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
+
+</br>
+<section id="images">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="section-heading text-center">
+                    <h2>Our Images</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Single Special Area -->
+            <div class="col-12 col-md-4">
+                <div class="image-special text-center wow fadeInUp zoom" data-wow-delay="0.2s">
+                    <div class="single-icon">
+                        <i class="ti-mobile" aria-hidden="true"></i>
+                    </div>
+                    <img class="d-block w-100" src="assets/images/photos/photo1.jpg">
+                </div>
+            </div>
+            <!-- Single Special Area -->
+            <div class="col-12 col-md-4">
+                <div class="image-special text-center wow fadeInUp zoom" data-wow-delay="0.4s">
+                    <div class="single-icon">
+                        <i class="ti-ruler-pencil" aria-hidden="true"></i>
+                    </div>
+                    <img class="d-block w-100" src="assets/images/photos/photo2.jpg">
+                </div>
+            </div>
+            <!-- Single Special Area -->
+            <div class="col-12 col-md-4">
+                <div class="image-special text-center wow fadeInUp zoom" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <img class="d-block w-100" src="assets/images/photos/photo3.jpg">
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
+
+</br>
+<section id="videos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="section-heading text-center">
+                    <h2>Our Videos</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="video-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="video-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="video-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="section-heading text-center">
+                    <h2>Contact Us</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="contact-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <i class='fas fa-map-marker-alt' style='font-size:36px'></i>
+                    <h6>ADDRESS</h6>
+                    <p>1st Floor, Aditya Trade Center, Near Mythrivanam, Hyderabad - 500 084, Telangana</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" style="border-left: 1px solid #c0bacf;border-right: 1px solid  #c0bacf;">
+                <div class="contact-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <i class='fas fa-phone' style='font-size:36px'></i>
+                    <h6>CONTACT</h6>
+                    <p>+91-9030706500</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="contact-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-icon">
+                        <i class="ti-settings" aria-hidden="true"></i>
+                    </div>
+                    <i class='far fa-envelope' style='font-size:36px'></i>
+                    <h6>EMAIL</h6>
+                    <p>info@4junctionsinstitute.com</p>
+                </div>
+            </div>
+    </div>
+</section>
+</body>
+
+<footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="footer-text">
+            <h3>Church Portal</h3>
+        </div>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <a href="#"><i class="fa fa-facebook-official" style="font-size:48px;color:blue"></i></a>
+            <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <p>Copyright ©2020 Designed by <a href="https://theasksystems.com" target="_blank">The ASK Systems</a></p>
+        </div>
+    </footer>
+</html>
